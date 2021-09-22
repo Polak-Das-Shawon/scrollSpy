@@ -1,0 +1,62 @@
+:root {
+    --mainColor: #ff9800;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Roboto;
+  }
+
+  #scrollspy-body {
+      height: 100vh;
+      overflow-y: scroll;
+  }
+  
+  #navbar {
+    background: #4C4C4C;
+  }
+  
+  #home {
+    background: #f2b70543;
+    color: #53618d;
+  }
+  
+  #bio {
+    background: #f21b435f;
+    color: #F2B705;
+  }
+  
+  #work {
+    background: #1e264088;
+    color: #F21B42;
+  }
+  
+  #contact {
+    background: rgba(0, 0, 0, 0.522);
+    color: white;
+  }
+  
+  h1 {
+    font-size: 5em;
+  }
+  
+  .nav-item {
+    transition: background 200ms;
+  }
+  
+  .nav-link {
+    outline: none;
+    background:
+       linear-gradient(
+         to bottom, var(--mainColor) 0%,
+         var(--mainColor) 100%
+       );
+    background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 1px 1px;
+    transition: background-size .2s;
+  }
+  
+  .nav-item.active .nav-link {
+    background-size: 4px 50px;
+  }
